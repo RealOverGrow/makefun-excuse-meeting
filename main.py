@@ -11,7 +11,7 @@ JOKE = "Sorry I missed the stand-up — I took it literally and stayed lying dow
 def main():
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(JOKE + "\n")
+        f.write(JOKE.strip() + "\n")
 
 if __name__ == "__main__":
     main()
